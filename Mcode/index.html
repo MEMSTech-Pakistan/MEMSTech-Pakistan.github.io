@@ -60,25 +60,6 @@
 <p align="left">Apad = 100e-6*1540e-6;</p>
 <p align="left">% Acombs = Apad+(Afinger*110)</p>
 <p align="left">Acombs=110*Afinger;</p>
-
-<p align="left">area_m1 = 2*(x_length_m1*width_m1)+2*(y_length_m1*width_m1);</p>
-<p align="left">area_m2 = 2*(x_length_m2*width_m2)+2*(y_length_m2*width_m2);</p>
-<p align="left">area_mf = 2*(x_length_mf*width_mf)+2*(y_length_mf*width_mf);</p>
-<p align="left">area_m3a = 2*(x_length_m3a*width_m3a)+2*(y_length_m3a*width_m3a);</p>
-<p align="left">area_m3b = ((x_length_m3b*width_m3b)-(600e-6*1600e-6))+Acombs;</p>
-<p align="left">%Masses</p>
-<p align="left">m1 = density*(h*area_m1)</p>
-<p align="left">m2 = density*(h*area_m2)</p>
-<p align="left">mf = density*(h*area_mf)</p>
-<p align="left">m3a = density*(h*area_m3a)</p>
-<p align="left">m3b = density*(h*area_m3b)</p>
-<p align="left">mass_of_combs = density*(h*Acombs)</p>
-<p align="left">m3=mf+m3a+m3b</p>
-<p align="left">total_volume = (m1+m2+m3)/density</p>
-<p align="left">%Spring Constant Calculation</p>
-<p align="left">w_k1 = 10e-6;    %Width of beam for spring K1</p>
-<p align="left">L_k1 = 600e-6;   %Length of beam for K1</p>
-
 <p align="left">w_k12 = 16e-6;</p>
 <p align="left">L_k12 = 600e-6;</p>
 
@@ -149,13 +130,6 @@
 
 <p align="left">for i=1:length(w)</p>
 
-<p align="left"><p align="left">    T=[(-(w(i)^2)*m1+k1+k12)+1j*w(i)*c1 -k12 0 -w(i)*c1 0 0;</p>
-<p align="left">        -k12 (-(w(i)^2)*m2+k2+k12+k23)+1j*w(i)*c2 -k23 0 -w(i)*c2 0;</p>
-<p align="left">       0 -k23 (-(w(i)^2)*m3+k3+k23)+1j*w(i)*c3 0 0 -w(i)*c3;</p>
-<p align="left">        w(i)*c1 0 0 (-(w(i)^2)*m1+k1+k12) -k12 0;</p>
-<p align="left">        0 w(i)*c2 0 -k12 (-(w(i)^2)*m2+k2+k12+k23) -k23;</p>
-<p align="left">        0 0 w(i)*c3 0 -k23 (-(w(i)^2)*m3+k3+k23)];</p>
-
    
 <p align="left">    A=abs((inv(T)))*[F;0;0;0;0;0];</p>
     
@@ -167,14 +141,9 @@
 <p align="left">    phi_3(i)=atan(-A(6)/A(3));</p>
     
 <p align="left"><p align="left">end</p>
-<p align="left">hold on;grid on;grid minor;</p>
-<p align="left">plot(frq,X1,'b')</p>
-<p align="left">plot(frq,X2,'k')</p>
-<p align="left">plot(frq,X3,'r')</p>
-<p align="left">legend('X1','X2','X3')</p>
 <p align="left"><p align="left"><p align="left">xlabel('Frequency (Hz)');</p>
 <p align="left"><p align="left">ylabel('Displacement of Masses (m)');</p>
-<p align="left">title('Frequency Analysis')</p>
+
 
 </p>
 </html> 
