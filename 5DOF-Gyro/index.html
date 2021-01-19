@@ -89,15 +89,15 @@
 	<img src="https://memstech-pakistan.github.io/image/image.jpg" class="bio-photo" alt="Gyroscope"></a>
 	     
 <h3>MEMSTech Pakistan</h3>
-<p>Site for the MEMS Gyroscope</p>
+<p>Site for the MEMS </p>
 <!--<p>( For the details, visit respective section)</p>-->
 
 <a href="#paperTitle" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>General Description</b></a>
 
 <a href="#cadModel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Structural Design</b></a>
 <a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Matlab Code</b></a>
-<a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Analytical Modeling</b></a>
-<a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>FEM Analysis</a></b>
+<a href="#amodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Analytical Modeling</b></a>
+<a href="#fem" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>FEM Analysis</a></b>
 
 <!--<a href="https://bbcurdu.com" class="author-social" target="_blank"><i class="fa fa-github-square"></i> Github</a>-->
 
@@ -165,14 +165,28 @@ respectively, acts as a collider mass and transfers the dynamic energy from the 
 mass (m3a, m3b, mf ). The mass m2 is also connected to the substrate through mechanical spring k2.
 The k2 allows us to optimize the dynamic displacement amplification between the mass m1 and sense
 mass (m3a, m3b, mf ) and the width of the flat operational region between the resonance peaks of drive
-mode oscillators [17]. The air damping between the actuator combs attached to the mass m1 and
+mode oscillators. The air damping between the actuator combs attached to the mass m1 and
 sensing parallel plates attached to sense mass (m3a, m3b, mf ) are represented by c1x and c2x, respectively.
 Figure 4b shows the 2-DoF sense mode mass–spring–damper model of the MEMS gyroscope. The mass
 m3b acts as dynamic vibration absorber for the mass m3a and both masses are coupled through the
 mechanical spring ky1. The mass m3a is attached to the decoupling frame mf , which acts as an anchor,
 through mechanical spring ky2 and the air damping in the sensing parallel plates attached to the mass
-Micromachines m3b is represented by 2020, 11, x cy.<br /><br /></p>
+Micromachines m3b is represented by cy, 11, x cy.<br /><br /></p>
 	<img src="https://memstech-pakistan.github.io/image/gyro3.JPG" class="bio-photo" alt="Gyroscope"></a>
+	
+<h3 id="fem"> FEM Analysis</h3>
+<p align="justify">&emsp;&emsp;	To determine the resonant frequency values and corresponding mode shapes for the MEMS
+gyroscope, a FEM-based analysis was carried out in the CoventorWare Analyzer module. Figure below shows the desired three drive mode shapes and two sense mode shapes for the MEMS gyroscope. The first,
+sixth and tenth modes were in the drive direction with a frequency of 1.608 kHz, 3.329 kHz and
+4.822 kHz respectively. The second and seventh modes are in the sense direction with a frequency
+of 1.707 kHz and 3.709 kHz respectively. These results show that the two sense mode resonance
+frequencies are close to the first two drive mode frequencies, thus making the operational region of the
+MEMS gyroscope fall in the flat region between the resonance peaks. The third, fourth and fifth modes
+are out of the plane and twisting at 1.79 kHz, 1.9 kHz and 2 kHz respectively. These undesired modes
+separate from the flat region by at least 200 Hz. Table 3 compares the FEM-based modal analysis results
+with the analytical model, which show a close correspondence.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/gyro4.JPG" class="bio-photo" alt="Gyroscope"></a>
+        <img src="https://memstech-pakistan.github.io/image/table3.JPG" class="bio-photo" alt="Gyroscope"></a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div><!-- /.article-wrap -->
     
