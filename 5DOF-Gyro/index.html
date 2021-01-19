@@ -92,7 +92,7 @@
 <p>Site for the MEMS </p>
 <!--<p>( For the details, visit respective section)</p>-->
 
-<a href="#paperTitle" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>General Description</b></a>
+<a href="#paperTitle" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>Description</b></a>
 
 <a href="#cadModel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Structural Design</b></a>
 <a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Matlab Code</b></a>
@@ -140,6 +140,27 @@ presented to estimate the voltage sensitivity under the constraints of the reado
 <h3 id="cadmodel">Structural Design</h3>
 <!--<p>In progress.<br /><br /></p>
 -->
+<p align="justify">&emsp;&emsp;Figure 1 shows the proposed multi-DoF MEMS gyroscope design with a 3-DoF drive mode
+and 2-DoF sense mode oscillators. The drive and sense masses are connected to each other using
+serpentine-shaped mechanical springs. These springs allow the displacement of the masses in the desired direction only, thus minimizing the cross-axis displacement. The oscillations in the drive
+axis (x-axis) are obtained through a comb drive-based electrostatic actuator which is attached to the
+outer mass m1. The combination of mass m3a and m3b along with the decoupling frame of mass mf ,
+acts as a final vibration absorber m3. For an applied actuation voltage to the electrostatic actuator,
+a dynamically-amplified displacement is achieved in the mass m3 while the mass m2 transfers the
+dynamic energy from mass m1 to m3. For an input rotation in the z-axis, a Coriolis force is generated
+in the orthogonal axis to drive and rotation axes i.e., y-axis. This leads to a displacement in the
+2-DoF sense mode oscillator consisting of a mass m3a and m3b, which are connected to each other
+through mechanical springs. The mass m3b acts as a vibration absorber for the mass m3a in the sense
+direction, resulting in a dynamically-amplified displacement in the mass m3b with respect to mass m3a
+corresponding to the Coriolis force. The displacement in the mass m3b is sensed using parallel plates,
+which are arranged in a gap–antigap-based differential configuration [27]. The small gap (d1) is kept as
+3 µm while the large gap (d2) value is 9 µm. The change in capacitance in the sensing parallel plates
+has an inverse relationship to the initial air gap between the plates. The minimum air gap allowed by
+the microfabrication process is 2 µm. However, to meet the microfabrication process constraints and to
+minimize the Brownian noise and air damping effect, the initial small gap (d1) is considered to be 3 µm.
+To minimize the effect of sudden mechanical shock, semicircle-shaped end stoppers are designed at the
+end of the masses adjacent to the anchors. Table 2 shows the main design parameters of the multi-DoF
+Micromachines MEMS gyroscope.<br /><br /></p>
 
 <img src="https://memstech-pakistan.github.io/image/gyro1.JPG" class="bio-photo" alt="Gyroscope"></a>
  <!--<p>In progress.<br /><br /></p>-->
