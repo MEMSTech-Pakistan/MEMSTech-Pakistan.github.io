@@ -70,7 +70,7 @@
 		        
 				<!--<li><a href="https://memstech-pakistan.github.io/image/" >MEMS Devices</a></li>-->
 		        
-				<li><a href="https://memstech-pakistan.github.io/5DOF-Gyro/" >5-DOF Thermally Stable Non-resonant Gyroscope</a></li>
+				<li><a href="https://memstech-pakistan.github.io/multidof-gyro/" >MULTI-DOF ELECTROTHERMALLY ACTUATED MEMS GYROSCOPE/a></li>
 		        
 				<!--<li><a href="https://memstech-pakistan.github.io/image" >MEMS accellerometer</a></li>-->
 		        
@@ -94,7 +94,7 @@
 
 <a href="#description" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>Description</b></a>
 
-<a href="#sdesign" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Structural Design</b></a>
+<a href="#sdesign" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Operating Principle</b></a>
 <a href="#amodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Analytical Modeling</b></a>
 <a href="#fem" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>FEM Analysis</a></b>
 <a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>MATLAB Code</a></b>
@@ -119,81 +119,63 @@ and 2-DoF Sense Mode Thermally Stable
 Non-Resonant MEMS Gyroscope</h2>
 <div class="article-wrap">
 <h3 id="description"> Description</h3>
-<p align="justify"> &emsp;&emsp;Microfabrication process-driven design of a multi-degree of
-freedom (multi-DoF) non-resonant electrostatic microelectromechanical systems (MEMS) gyroscope is presented
-by considering the design constraints of commercially available low-cost and widely-used
-silicon-on-insulator multi-user MEMS processes (SOIMUMPs), with silicon as a structural material.</p>
+<p align="justify"> &emsp;&emsp;the design and analysis of a multi degree of freedom (DOF)
+electro-thermally actuated non-resonant MEMS gyroscope with a 3-DOF drive mode and 1-DOF
+sense mode system. The 3-DOF drive mode system consists of three masses coupled together
+using suspension beams. The 1-DOF system consists of a single mass whose motion is decoupled
+from the drive mode using a decoupling frame. The gyroscope is designed to be operated in
+the flat region between the first two resonant peaks in drive mode, thus minimizing the effect of
+environmental and fabrication process variations on device performance. The high gain in the flat
+operational region is achieved by tuning the suspension beams stiffness. .</p>
 	
-<p align="justify"> &emsp;&emsp;The proposed design consists of a 3-DoF drive mode oscillator with the concept of addition of a collider
-mass which transmits energy from the drive mass to the passive sense mass. In the sense direction,
-2-DoF sense mode oscillator is used to achieve dynamically-amplified displacement in the sense
-mass. A detailed analytical model for the dynamic response of MEMS gyroscope is presented and
-performance characteristics are validated through finite element method (FEM)-based simulations.
-The effect of operating air pressure and temperature variations on the air damping and resulting
-dynamic response is analyzed. The thermal stability of the design and corresponding effect on
-the mechanical and capacitive sensitivity, for an operating temperature range of −40 ◦C to 100 ◦C,
-is presented. The results showed that the proposed design is thermally stable, robust to environmental
-variations, and process tolerances with a wide operational bandwidth and high sensitivity. Moreover,
-a system-level model of the proposed gyroscope and its integration with the sensor electronics is
-presented to estimate the voltage sensitivity under the constraints of the readout electronic circuit.<br /><br /></p>
+<p align="justify"> &emsp;&emsp;A detailed analytical model,
+considering the dynamics of both the electro-thermal actuator and multi-mass system, is developed.
+A parametric optimization is carried out, considering the microfabrication process constraints of the
+Metal Multi-User MEMS Processes (MetalMUMPs), to achieve high gain. The stiffness of suspension
+beams is optimized such that the sense mode resonant frequency lies in the flat region between the
+first two resonant peaks in the drive mode. The results acquired through the developed analytical
+model are verified with the help of 3D finite element method (FEM)-based simulations. The first
+three resonant frequencies in the drive mode are designed to be 2.51 kHz, 3.68 kHz, and 5.77 kHz,
+respectively. The sense mode resonant frequency is designed to be 3.13 kHz. At an actuation voltage
+of 0.2 V, the dynamically amplified drive mode gain in the sense mass is obtained to be 18.6 µm. With
+this gain, a capacitive change of 28.11 f F and 862.13 f F is achieved corresponding to the sense mode
+amplitude of 0.15 µm and 4.5 µm at atmospheric air pressure and in a vacuum, respectively.<br /><br /></p>
 
-<h3 id="sdesign"> Structural Design</h3>
-<p align="justify">&emsp;&emsp;Figure 1 shows the proposed multi-DoF MEMS gyroscope design with a 3-DoF drive mode
-and 2-DoF sense mode oscillators. The drive and sense masses are connected to each other using
-serpentine-shaped mechanical springs. These springs allow the displacement of the masses in the desired direction only, thus minimizing the cross-axis displacement. The oscillations in the drive
-axis (x-axis) are obtained through a comb drive-based electrostatic actuator which is attached to the
-outer mass m1. The combination of mass m3a and m3b along with the decoupling frame of mass mf ,
-acts as a final vibration absorber m3. For an applied actuation voltage to the electrostatic actuator,
-a dynamically-amplified displacement is achieved in the mass m3 while the mass m2 transfers the
-dynamic energy from mass m1 to m3. For an input rotation in the z-axis, a Coriolis force is generated
-in the orthogonal axis to drive and rotation axes i.e., y-axis. This leads to a displacement in the
-2-DoF sense mode oscillator consisting of a mass m3a and m3b, which are connected to each other
-through mechanical springs. The mass m3b acts as a vibration absorber for the mass m3a in the sense
-direction, resulting in a dynamically-amplified displacement in the mass m3b with respect to mass m3a
-corresponding to the Coriolis force. The displacement in the mass m3b is sensed using parallel plates,
-which are arranged in a gap–antigap-based differential configuration [27]. The small gap (d1) is kept as
-3 µm while the large gap (d2) value is 9 µm. The change in capacitance in the sensing parallel plates
-has an inverse relationship to the initial air gap between the plates. The minimum air gap allowed by
-the microfabrication process is 2 µm. However, to meet the microfabrication process constraints and to
-minimize the Brownian noise and air damping effect, the initial small gap (d1) is considered to be 3 µm.
-To minimize the effect of sudden mechanical shock, semicircle-shaped end stoppers are designed at the
-end of the masses adjacent to the anchors. Table 2 shows the main design parameters of the multi-DoF
-Micromachines MEMS gyroscope.<br /><br /></p>
+<h3 id="sdesign"> Operating Principle</h3>
+<p align="justify">&emsp;&emsp;Figure 1 shows the schematic of the proposed MEMS gyroscope with a 3-DOF drive mode and
+1-DOF sense mode. The first mass m1 which is the drive mass is excited by an external force in the
+drive direction using the V-shaped electro thermal actuator. The second mass m2 transfers the dynamic
+energy from the mass m1 to mass m3 which acts as a final oscillating mass. The masses m1 and m2 are
+free to move in the drive direction but constrained to move in the sense direction by means of elastic
+springs. The sense mode oscillations of mass m3 are decoupled from the drive direction oscillations by
+means of a decoupling frame mf to minimize instabilities due to dynamical coupling between sense
+and drive modes. Thus, masses m1, m2, and combination of (mf + m3) form a 3-DOF drive mode
+while m3 being free to oscillate in the sense acts as a 1-DOF sense mode oscillator. The sense direction
+oscillation of the mass m3, corresponding to an input angular velocity, is designed to be measured by
+using parallel plate sense combs.<br /><br /></p>
 
-<img src="https://memstech-pakistan.github.io/image/gyro1.JPG" class="bio-photo" alt="Gyroscope"></a>
+<img src="https://memstech-pakistan.github.io/image/gyro5.JPG" class="bio-photo" alt="Gyroscope"></a>
  <!--<p>In progress.<br /><br /></p>-->
 
 <h3 id="amodel"> Analytical Modeling</h3>
-<p align="justify">&emsp;&emsp;	Figure 4a shows the 3-DoF drive mode mass–spring–damper model representation of the proposed
-MEMS gyroscope. For an input driving force Fcos(!t), displacement of mass m1, m2 and sense mass
-(m3a, m3b, mf ) is represented by x1, x2, and x3 respectively. The mass m1 and sense mass (m3a, m3b,mf ) are anchored to the substrate through mechanical springs k1 and k3 respectively. The mass
-m2, attached to the mass m1 and sense mass (m3a, m3b, mf ) through mechanical springs k12 and k23,
-respectively, acts as a collider mass and transfers the dynamic energy from the mass m1 to the sense
-mass (m3a, m3b, mf ). The mass m2 is also connected to the substrate through mechanical spring k2.
-The k2 allows us to optimize the dynamic displacement amplification between the mass m1 and sense
-mass (m3a, m3b, mf ) and the width of the flat operational region between the resonance peaks of drive
-mode oscillators. The air damping between the actuator combs attached to the mass m1 and
-sensing parallel plates attached to sense mass (m3a, m3b, mf ) are represented by c1x and c2x, respectively.
-Figure 4b shows the 2-DoF sense mode mass–spring–damper model of the MEMS gyroscope. The mass
-m3b acts as dynamic vibration absorber for the mass m3a and both masses are coupled through the
-mechanical spring ky1. The mass m3a is attached to the decoupling frame mf , which acts as an anchor,
-through mechanical spring ky2 and the air damping in the sensing parallel plates attached to the mass
-Micromachines m3b is represented by cy, 11, x cy.<br /><br /></p>
-	<img src="https://memstech-pakistan.github.io/image/gyro3.JPG" class="bio-photo" alt="Gyroscope"></a>
+<p align="justify">&emsp;&emsp;	The designed suspension system configuration of the proposed gyroscope allows the masses
+m1 and m2 to move only in the drive direction but restricted their motion in the sense direction. The
+mass m3 is allowed to oscillate in both the drive and sense direction which are orthogonal to each
+other. The suspension system configuration of the proposed gyroscope dynamical model is shown in
+Figure below.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/gyro6.JPG" class="bio-photo" alt="Gyroscope"></a>
 	
 <h3 id="fem"> FEM Analysis</h3>
-<p align="justify">&emsp;&emsp;	To determine the resonant frequency values and corresponding mode shapes for the MEMS
-gyroscope, a FEM-based analysis was carried out in the CoventorWare Analyzer module. Figure below shows the desired three drive mode shapes and two sense mode shapes for the MEMS gyroscope. The first,
-sixth and tenth modes were in the drive direction with a frequency of 1.608 kHz, 3.329 kHz and
-4.822 kHz respectively. The second and seventh modes are in the sense direction with a frequency
-of 1.707 kHz and 3.709 kHz respectively. These results show that the two sense mode resonance
-frequencies are close to the first two drive mode frequencies, thus making the operational region of the
-MEMS gyroscope fall in the flat region between the resonance peaks. The third, fourth and fifth modes
-are out of the plane and twisting at 1.79 kHz, 1.9 kHz and 2 kHz respectively. These undesired modes
-separate from the flat region by at least 200 Hz. Table 3 compares the FEM-based modal analysis results
-with the analytical model, which show a close correspondence.<br /><br /></p>
-	<img src="https://memstech-pakistan.github.io/image/gyro4.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
-        <img src="https://memstech-pakistan.github.io/image/table3.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<p align="justify">&emsp;&emsp;	a FEM-based natural frequency analysis is carried out. The boundary conditions and material
+properties are input parameters while mode shapes and resonant frequencies are the output responses
+of the modal analysis. The structural parts are modeled using Solid 98 elements. The optimized mesh
+size is selected based on patch conforming algorithm for tetrahedrons method control. The desired
+mode shapes with their associated resonant frequencies are shown in Figure 14. Table 3 shows the
+comparison of the drive mode resonant frequencies obtained using FEM analysis to that obtained
+using an analytical model. The percentage deviation is less than 1%, thus validating the accuracy of
+the developed analytical model.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/gyro7.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+        <img src="https://memstech-pakistan.github.io/image/table1.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
 
 <h3 id="mcode"> Matlab Code</h3>
 <p align="justify">&emsp;&emsp;	For MATLAB code, please click the <a href="https://memstech-pakistan.github.io/Mcode"> <b>Link-1</b></a> </p>
