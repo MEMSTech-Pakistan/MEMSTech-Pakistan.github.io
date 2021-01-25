@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>MEMSTech Pakistan  &#8211; MEMS Gyroscope Design </title>
+<meta name="description" content="MEMSTech Pakistan">
+<meta name="keywords" content="Jekyll, theme, responsive, blog, template">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MEMSTech Pakistan">
+<meta property="og:description" content="MEMSTech Pakistan">
+<meta property="og:url" content="https://memstech-pakistan.github.io/">
+<meta property="og:site_name" content="MEMSTech Pakistan">
+
+
+
+
+
+<link rel="canonical" href="https://memstech-pakistan.github.io/">
+<link href="https://anysbacha.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="MEMSTech site Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://anysbacha.github.io/assets/css/main.min.css">
+<link rel="stylesheet" href="https://anysbacha.github.io/assets/academicons.css" />
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://anysbacha.github.io/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://anysbacha.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://anysbacha.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+
+
+
+</head>
+
+<body class="page">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://memstech-pakistan.github.io"> Site is Updating</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				<li><a href="https://memstech-pakistan.github.io" >Home</a></li>
+		        
+				<!--<li><a href="https://memstech-pakistan.github.io/image/" >MEMS Devices</a></li>-->
+		        
+				<li><a href="https://memstech-pakistan.github.io/multidof-gyro/" >MULTI-DOF ELECTROTHERMALLY ACTUATED MEMS GYROSCOPE</a></li>
+		        
+				<!--<li><a href="https://memstech-pakistan.github.io/image" >MEMS accellerometer</a></li>-->
+		        
+				<!--<li><a href="https://memstech-pakistan.github.io/image" >SU-8 Based Electrothermal Micro-Gripper</a></li>--> 
+		        
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+	<img src="https://memstech-pakistan.github.io/image/image.jpg" class="bio-photo" alt="Gyroscope"></a>
+	     
+<h3>MEMSTech Pakistan</h3>
+<p>Site for the MEMS </p>
+<!--<p>( For the details, visit respective section)</p>-->
+
+<a href="#description" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>Description</b></a>
+<a href="#sdesign" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Operating Principle</b></a>
+<a href="#amodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Analytical Modeling</b></a>
+<a href="#fem" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>FEM Analysis</a></b>
+<a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>MATLAB Code</a></b>
+<!--<a href="#cmodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i><b>CAD file</b></a>-->
+<a href="#cfile" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>CAD Model</b></a>
+<!--<a href="https://bbcurdu.com" class="author-social" target="_blank"><i class="fa fa-github-square"></i> Github</a>-->
+
+
+
+
+
+
+<!--<a href="mailto:<someone> at umich dot edu replace <someone> with last name" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> e-Mail</a>//-->
+
+
+  </div>
+  <article>
+    <!--<h1> MEMS Devices</h1>-->
+<h2 id="paperTitle">Design and Analysis of a High-Gain and Robust
+Multi-DOF Electro-thermally Actuated
+MEMS Gyroscope</h2>
+<div class="article-wrap">
+<h3 id="description"> Description</h3>
+<p align="justify"> &emsp;&emsp;the design and analysis of a multi degree of freedom (DOF)
+electro-thermally actuated non-resonant MEMS gyroscope with a 3-DOF drive mode and 1-DOF
+sense mode system. The 3-DOF drive mode system consists of three masses coupled together
+using suspension beams. The 1-DOF system consists of a single mass whose motion is decoupled
+from the drive mode using a decoupling frame. The gyroscope is designed to be operated in
+the flat region between the first two resonant peaks in drive mode, thus minimizing the effect of
+environmental and fabrication process variations on device performance. The high gain in the flat
+operational region is achieved by tuning the suspension beams stiffness. .</p>
+	
+<p align="justify"> &emsp;&emsp;A detailed analytical model,
+considering the dynamics of both the electro-thermal actuator and multi-mass system, is developed.
+A parametric optimization is carried out, considering the microfabrication process constraints of the
+Metal Multi-User MEMS Processes (MetalMUMPs), to achieve high gain. The stiffness of suspension
+beams is optimized such that the sense mode resonant frequency lies in the flat region between the
+first two resonant peaks in the drive mode. The results acquired through the developed analytical
+model are verified with the help of 3D finite element method (FEM)-based simulations. The first
+three resonant frequencies in the drive mode are designed to be 2.51 kHz, 3.68 kHz, and 5.77 kHz,
+respectively. The sense mode resonant frequency is designed to be 3.13 kHz. At an actuation voltage
+of 0.2 V, the dynamically amplified drive mode gain in the sense mass is obtained to be 18.6 µm. With
+this gain, a capacitive change of 28.11 f F and 862.13 f F is achieved corresponding to the sense mode
+amplitude of 0.15 µm and 4.5 µm at atmospheric air pressure and in a vacuum, respectively.<br /><br /></p>
+
+<h3 id="sdesign"> Operating Principle</h3>
+<p align="justify">&emsp;&emsp;Figure 1 shows the schematic of the proposed MEMS gyroscope with a 3-DOF drive mode and
+1-DOF sense mode. The first mass m1 which is the drive mass is excited by an external force in the
+drive direction using the V-shaped electro thermal actuator. The second mass m2 transfers the dynamic
+energy from the mass m1 to mass m3 which acts as a final oscillating mass. The masses m1 and m2 are
+free to move in the drive direction but constrained to move in the sense direction by means of elastic
+springs. The sense mode oscillations of mass m3 are decoupled from the drive direction oscillations by
+means of a decoupling frame mf to minimize instabilities due to dynamical coupling between sense
+and drive modes. Thus, masses m1, m2, and combination of (mf + m3) form a 3-DOF drive mode
+while m3 being free to oscillate in the sense acts as a 1-DOF sense mode oscillator. The sense direction
+oscillation of the mass m3, corresponding to an input angular velocity, is designed to be measured by
+using parallel plate sense combs.<br /><br /></p>
+
+<img src="https://memstech-pakistan.github.io/image/gyro5.JPG" class="bio-photo" alt="Gyroscope"></a>
+ <!--<p>In progress.<br /><br /></p>-->
+
+<h3 id="amodel"> Analytical Modeling</h3>
+<p align="justify">&emsp;&emsp;	The designed suspension system configuration of the proposed gyroscope allows the masses
+m1 and m2 to move only in the drive direction but restricted their motion in the sense direction. The
+mass m3 is allowed to oscillate in both the drive and sense direction which are orthogonal to each
+other. The suspension system configuration of the proposed gyroscope dynamical model is shown in
+Figure below.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/gyro6.JPG" class="bio-photo" alt="Gyroscope"></a>
+	
+<h3 id="fem"> FEM Analysis</h3>
+<p align="justify">&emsp;&emsp;	a FEM-based natural frequency analysis is carried out. The boundary conditions and material
+properties are input parameters while mode shapes and resonant frequencies are the output responses
+of the modal analysis. The structural parts are modeled using Solid 98 elements. The optimized mesh
+size is selected based on patch conforming algorithm for tetrahedrons method control. The desired
+mode shapes with their associated resonant frequencies are shown in Figure 14. Table 3 shows the
+comparison of the drive mode resonant frequencies obtained using FEM analysis to that obtained
+using an analytical model. The percentage deviation is less than 1%, thus validating the accuracy of
+the developed analytical model.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/gyro7.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+        <img src="https://memstech-pakistan.github.io/image/table1.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+
+<h3 id="mcode"> Matlab Code</h3>
+<p align="justify">&emsp;&emsp;	For MATLAB code, please click the <a href="https://memstech-pakistan.github.io/Mcode"> <b>Link-1</b></a> </p>
+
+<h3 id="cfile"> CAD Model</h3>
+<p align="justify">&emsp;&emsp;	For CAD Model, please click the <a href="https://memstech-pakistan.github.io/image/793161.ris"> <b>Link-2</b></a> </p>
+
+
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div><!-- /.article-wrap -->
+    
+  </article>
+</div><!-- /#index -->
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://anysbacha.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://anysbacha.github.io/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-106575593-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+	
+
+          
+
+</body>
+</html>
