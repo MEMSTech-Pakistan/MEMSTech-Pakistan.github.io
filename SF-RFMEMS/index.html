@@ -70,7 +70,7 @@
 		        
 				<!--<li><a href="https://memstech-pakistan.github.io/image/" >MEMS Devices</a></li>-->
 		        
-				<li><a href="https://memstech-pakistan.github.io/multidof-gyro/" >MULTI-DOF ELECTROTHERMALLY ACTUATED MEMS GYROSCOPE</a></li>
+				<li><a href="https://memstech-pakistan.github.io/multidof-gyro/" style="color:brown">squeeze-film Damping in RF-MEMS switch</a></li>
 		        
 				<!--<li><a href="https://memstech-pakistan.github.io/image" >MEMS accellerometer</a></li>-->
 		        
@@ -94,14 +94,8 @@
 
 <a href="#description" class="author-social" target="_blank"><!--<i class="ai ai-google-scholar-square"></i>-->&nbsp; <b>Description</b></a>
 <a href="#sdesign" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Operating Principle</b></a>
-<a href="#amodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Analytical Modeling</b></a>
+<a href="#amodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>Modeling</b></a>
 <a href="#fem" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>FEM Analysis</a></b>
-<a href="#mcode" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>MATLAB Code</a></b>
-<!--<a href="#cmodel" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i><b>CAD file</b></a>-->
-<a href="#cfile" class="author-social" target="_blank"><!--<i class="fa fa-linkedin-square"></i>--> <b>CAD Model</b></a>
-<!--<a href="https://bbcurdu.com" class="author-social" target="_blank"><i class="fa fa-github-square"></i> Github</a>-->
-
-
 
 
 
@@ -112,74 +106,118 @@
   </div>
   <article>
     <!--<h1> MEMS Devices</h1>-->
-<h2 id="paperTitle">Design and Analysis of a High-Gain and Robust
-Multi-DOF Electro-thermally Actuated
-MEMS Gyroscope</h2>
+<h2 id="paperTitle">Effect of environmental conditions and geometric parameters
+on the squeeze film damping in RF-MEMS switches</h2>
 <div class="article-wrap">
 <h3 id="description"> Description</h3>
-<p align="justify"> &emsp;&emsp;the design and analysis of a multi degree of freedom (DOF)
-electro-thermally actuated non-resonant MEMS gyroscope with a 3-DOF drive mode and 1-DOF
-sense mode system. The 3-DOF drive mode system consists of three masses coupled together
-using suspension beams. The 1-DOF system consists of a single mass whose motion is decoupled
-from the drive mode using a decoupling frame. The gyroscope is designed to be operated in
-the flat region between the first two resonant peaks in drive mode, thus minimizing the effect of
-environmental and fabrication process variations on device performance. The high gain in the flat
-operational region is achieved by tuning the suspension beams stiffness. .</p>
+<p align="justify"> &emsp;&emsp;A detailed analysis of squeeze film air damping effects on dynamic responses of RF-MEMS switches
+under varying environmental conditions, etch holes’ configuration and air gap thickness values is presented in this article. The effect operating
+conditions like air pressure, temperature and humidity on the closing time of RF-MEMS switches is analyzed. The air
+pressure distribution beneath the top suspended plate of switches and corresponding damping parameters extraction, under
+varying conditions, is obtained using finite element method based modal projection technique. The extracted damping
+parameters are used in the subsequent coupled field electrostatic-structural dynamic analysis to analyze the effect of
+variation in environmental variations and geometric parameters on the closing time of RF-MEMS switches. The effect of
+change in etch holes’ configuration on the damping parameters is obtained to be minimum while change in switch
+operating conditions and air gap thickness values have significant effect on the air damping value and closing time of
+switches..</p>
 	
-<p align="justify"> &emsp;&emsp;A detailed analytical model,
-considering the dynamics of both the electro-thermal actuator and multi-mass system, is developed.
-A parametric optimization is carried out, considering the microfabrication process constraints of the
-Metal Multi-User MEMS Processes (MetalMUMPs), to achieve high gain. The stiffness of suspension
-beams is optimized such that the sense mode resonant frequency lies in the flat region between the
-first two resonant peaks in the drive mode. The results acquired through the developed analytical
-model are verified with the help of 3D finite element method (FEM)-based simulations. The first
-three resonant frequencies in the drive mode are designed to be 2.51 kHz, 3.68 kHz, and 5.77 kHz,
-respectively. The sense mode resonant frequency is designed to be 3.13 kHz. At an actuation voltage
-of 0.2 V, the dynamically amplified drive mode gain in the sense mass is obtained to be 18.6 µm. With
-this gain, a capacitive change of 28.11 f F and 862.13 f F is achieved corresponding to the sense mode
-amplitude of 0.15 µm and 4.5 µm at atmospheric air pressure and in a vacuum, respectively.<br /><br /></p>
+<p align="justify"> &emsp;&emsp;.<br /><br /></p>
 
 <h3 id="sdesign"> Operating Principle</h3>
-<p align="justify">&emsp;&emsp;Figure 1 shows the schematic of the proposed MEMS gyroscope with a 3-DOF drive mode and
-1-DOF sense mode. The first mass m1 which is the drive mass is excited by an external force in the
-drive direction using the V-shaped electro thermal actuator. The second mass m2 transfers the dynamic
-energy from the mass m1 to mass m3 which acts as a final oscillating mass. The masses m1 and m2 are
-free to move in the drive direction but constrained to move in the sense direction by means of elastic
-springs. The sense mode oscillations of mass m3 are decoupled from the drive direction oscillations by
-means of a decoupling frame mf to minimize instabilities due to dynamical coupling between sense
-and drive modes. Thus, masses m1, m2, and combination of (mf + m3) form a 3-DOF drive mode
-while m3 being free to oscillate in the sense acts as a 1-DOF sense mode oscillator. The sense direction
-oscillation of the mass m3, corresponding to an input angular velocity, is designed to be measured by
-using parallel plate sense combs.<br /><br /></p>
+<p align="justify">&emsp;&emsp;The 3D schematic of the electrostatically actuated RF-MEMS capacitive switch is shown below. The
+structure of the RF-MEMS switch is implemented on a coplanar waveguide (CPW) and consists of a suspended metal bridge overlapping the
+RF transmission line. The transmission line is covered with an insulating layer known as dielectric. The top suspended bridge is supported by four beams anchored to the RF grounded electrodes. In the
+normal configuration, the top suspended bridge is in upstate and due to
+very low value of capacitance, the signal propagates through switch
+with negligible losses. On application of DC voltage between the suspended bridge and dielectric layer, the bridge moves downward towards the transmission line. If the value of actuation voltage is high
+enough and the initial distance d between the suspended bridge and
+signal line is reduced to ds = 2d/3, the pull-in phenomena occurs. It
+causes the suspended bridge to make a contact with dielectric layer
+reducing the gap to ideally become zero. <br /><br /></p>
 
-<img src="https://memstech-pakistan.github.io/image/gyro5.JPG" class="bio-photo" alt="Gyroscope"></a>
+<img src="https://memstech-pakistan.github.io/image/rrfmems.JPG" class="bio-photo" alt="Gyroscope"></a>
  <!--<p>In progress.<br /><br /></p>-->
 
-<h3 id="amodel"> Analytical Modeling</h3>
-<p align="justify">&emsp;&emsp;	The designed suspension system configuration of the proposed gyroscope allows the masses
-m1 and m2 to move only in the drive direction but restricted their motion in the sense direction. The
-mass m3 is allowed to oscillate in both the drive and sense direction which are orthogonal to each
-other. The suspension system configuration of the proposed gyroscope dynamical model is shown in
-Figure below.<br /><br /></p>
-	<img src="https://memstech-pakistan.github.io/image/gyro6.JPG" class="bio-photo" alt="Gyroscope"></a>
-	
+<h3 id="amodel"> Modeling </h3>
+<p align="justify">&emsp;&emsp;	Analytical models are helpful at the design stages of MEMS devices
+for predicting certain design parameters and providing close approximations to the static and dynamic behavior. However, for an accurate
+depiction of the multiphysics behavior of MEMS devices modern numerical methods such as FEM simulations are extensively being employed. The governing principles of RF-MEMS switches are based on
+electromechanics, so the analysis of electromechanical characteristics
+of RF-MEMS switch is carried out using FEM based coupled electrostructural simulations. Fig. 2 shows the layout for the implemented
+FEM methodology. The FEM model is divided into two basic parts i.e.
+the switch structure and the initial air gap in between top suspended
+bridge and dielectric layer. The beams and suspended bridge are
+modeled using the 8 node Solid185 element. The mechanical structural
+constraints are applied on the supporting beams end to restrict the
+displacement. The initial air gap between the top suspended plate and
+bottom dielectric layer is modeled using the 20 node Solid226 elements. Since the top bridge plate is symmetric with respect to center
+thus to minimize the meshing complexity, only a quad portion is
+modeled in the FEM simulations. With an applied actuation voltage, the
+resulting electrostatic force moves the bridge plate towards the bottom
+dielectric layer.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/rrfmems1.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<p align="justify">&emsp;&emsp;The main performance parameters studied through FEM simulations
+for the RF-MEMS switch, with and without incorporating surface
+roughness include the up and downstate capacitance, pull in voltage,
+pull in gap and switching time. The table below shows the geometric parameters
+and material properties used for the FEM simulations of the RF-MEMS
+switch assuming thin film gold as a structural layer.	<br /><br /></p>
+<img src="https://memstech-pakistan.github.io/image/rrfmems2.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+	<li><h3 id="fem"> Case of smooth surface RF-MEMS switch</h3></li>
+<p align="justify">&emsp;&emsp;	To validate the accuracy of the FEM based simulations, initially
+electromechanical characteristics of the smooth surface RF-MEMS
+switch including pull-in voltage, up-state capacitance and pull-in gap
+are obtained using two different techniques in Multiphysics ANSYS
+module including transducer elements (Trans126) and coupled-field
+simulations. Trans126 elements provide a reduced order FEM modeling
+of the coupled electrostatic ̶ structural interaction utilizing the form of
+lumped elements. The results obtained through Trans126 and coupledfield simulations are validated through well-established analytical
+models for smooth surface RF-MEMS switches. Figure (a) shows the effect of changing initial air gap distance between the top suspended
+bridge and bottom dielectric layer on the pull-in voltage value. The
+results perfectly follow the fact that pull-in voltage value increases nonlinearly with increasing initial air gap between the top suspended
+bridge and bottom dielectric layer. Thus, validating the accuracy of the
+FEM simulations using both Trans126 and coupled-field simulations.
+Figure (b) shows that the up-state capacitance values vary non-linearly
+with increasing initial air gap value between the suspended bridge and
+dielectric layer. Figure (b) also shows an abrupt change in capacitance
+value as soon as air gap starts decreasing. With an air gap change from 1 μm to 0.4 μm the change in capacitance is approximately 2.5 times
+compared to the value at 1 μm. This indicate significance of initial air
+gap on performance of RF-MEMS switch since the capacitance in turn
+will determine pull-in voltage and pull-in gap of RF-MEMS switch.
+Figure (c) shows that the variation in the pull-in bridge displacement
+(pull-in gap) varies linearly with the increasing initial air gap value
+between the top suspended bridge and bottom dielectric layer. However, for higher values of the initial air gap there is a significant mismatch between the analytical and FEM simulation results..<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/rrfmems3.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+	<img src="https://memstech-pakistan.github.io/image/rrfmems4.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+	<img src="https://memstech-pakistan.github.io/image/rrfmems5.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+        
+<p align="justify">&emsp;&emsp;Figure below (a) shows the quad RF-MEMS switch model with surface
+roughness implemented in the FEM simulations. The figure (b) below shows the
+normalized values of upstate capacitance values obtained by varying
+initial air gap values. The normalized value of upstate capacitance increases with the increase in the semi-circle radius. The normalized
+upstate capacitance value i.e. 1.82 obtained by considering roughness
+of 100 nm for an initial air gap of 0.4 μm is about twice the value of
+capacitance obtained for a smooth surface RF-MEMS switch.<br /><br /></p>
+<img src="https://memstech-pakistan.github.io/image/rrfmems6.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<img src="https://memstech-pakistan.github.io/image/rrfmems7.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<p align="justify">&emsp;&emsp; The below figure shows the comparison of the results obtained.
+The upstate capacitance is experimentally measured as a function of
+applied voltage from the upstate to the pull in point<br /><br /></p>
+<img src="https://memstech-pakistan.github.io/image/rrfmems8.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
 <h3 id="fem"> FEM Analysis</h3>
-<p align="justify">&emsp;&emsp;	a FEM-based natural frequency analysis is carried out. The boundary conditions and material
-properties are input parameters while mode shapes and resonant frequencies are the output responses
-of the modal analysis. The structural parts are modeled using Solid 98 elements. The optimized mesh
-size is selected based on patch conforming algorithm for tetrahedrons method control. The desired
-mode shapes with their associated resonant frequencies are shown in Figure 14. Table 3 shows the
-comparison of the drive mode resonant frequencies obtained using FEM analysis to that obtained
-using an analytical model. The percentage deviation is less than 1%, thus validating the accuracy of
-the developed analytical model.<br /><br /></p>
-	<img src="https://memstech-pakistan.github.io/image/gyro7.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
-        <img src="https://memstech-pakistan.github.io/image/table1.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<p align="justify">&emsp;&emsp;	The FEM analysis is performed for rough surface RF-MEMS switch
+with thin film gold as structural layer by varying the initial air gap
+values from 3 μm to 0.4 μm and semi-circle radius from 100 nm to
+10 nm. The graphs for comparison of pull-in voltage and pull-in gap for
+different values of surface roughness and initial air gap values are
+shown in figure below.<br /><br /></p>
+	<img src="https://memstech-pakistan.github.io/image/rrfmems9.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
 
-<h3 id="mcode"> Matlab Code</h3>
-<p align="justify">&emsp;&emsp;	For MATLAB code, please click the <a href="https://memstech-pakistan.github.io/Mcode"> <b>Link-1</b></a> </p>
-
-<h3 id="cfile"> CAD Model</h3>
-<p align="justify">&emsp;&emsp;	For CAD Model, please click the <a href="https://memstech-pakistan.github.io/image/793161.ris"> <b>Link-2</b></a> </p>
+<p align="justify">&emsp;&emsp;The normalized value of pull-in voltage decreases
+with an increase in the radius of semi-circles and results can be seen in figure below<br /><br /></p>
+<img src="https://memstech-pakistan.github.io/image/rrfmems10.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
+<p align="justify">&emsp;&emsp;the effect of R/d ratio on the pull-in gap for the RFMEMS switch obtained through coupled-field FEM simulations can be seen below.<br /><br /></p>
+<img src="https://memstech-pakistan.github.io/image/rrfmems11.JPG" class="bio-photo" alt="Gyroscope"><br /><br /></a>
 
 
 
